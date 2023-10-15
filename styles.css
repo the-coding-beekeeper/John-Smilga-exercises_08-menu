@@ -1,0 +1,127 @@
+/* open-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/open-sans-v36-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/open-sans-v36-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* open-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/open-sans-v36-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+:root {
+  --light-gold: #c59d5f;
+  --dark-gold: #83683f;
+  --blue-gray: #102a42;
+  --cream-white: #f1f5f8;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #f1f5f8;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans';
+}
+header {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  color: var(--blue-gray);
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 44px;
+  margin-top: 4rem;
+}
+.line {
+  width: 80px;
+  height: 4px;
+  margin-top: 1rem;
+  background-color: var(--light-gold);
+}
+ul {
+  margin-top: 2rem;
+  list-style: none;
+}
+.button-list li {
+  display: inline;
+}
+.btn {
+  border-color: var(--light-gold) var(--dark-gold) var(--dark-gold) var(--light-gold);
+  border-radius: 7px;
+  padding: 7px 15px;
+  background-color: #f1f5f8;
+  margin: 0 5px;
+  text-transform: capitalize;
+  color: var(--light-gold);
+  font-size: 16px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+.btn:hover {
+  color: #f1f5f8;
+  background-color: #c59d5f;
+}
+main {
+  width: 55%;
+  margin: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu-element {
+  width: 100%;
+  margin-top: 3rem;
+}
+.menu-element img {
+  display: block;
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+  border: 4px solid var(--light-gold);
+  border-radius: 10px;
+}
+.name-and-price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(16,42,66,0.3);
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 10px 0;
+  text-transform: capitalize;
+}
+.price {
+  font-size: 14px;
+  color: var(--light-gold);
+}
+.description {
+  margin-top: 1rem;
+  color: rgba(16,42,66,0.5);
+  font-size: 14px;
+}
